@@ -71,6 +71,8 @@ RUN \
 COPY "systemctl3.py" "/bin/systemctl"
 RUN \
 	chmod "+x" "/bin/systemctl"
+
+# Clean up some services and targets we are not going to start
 RUN \
 	cd "/lib/systemd/system/sysinit.target.wants/" && \
 	ls | grep -v "systemd-tmpfiles-setup.service" | xargs rm -f && \
