@@ -1,5 +1,5 @@
-# Debian SystemD
-A Debian Docker container with SystemD and SSH daemon.
+# Debian systemd
+A Debian Docker container with systemd and SSH daemon.
 
 By default this container enables SSH, Cron and At daemons. SSH logins are allowed only with SSH key.
 
